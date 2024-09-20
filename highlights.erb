@@ -16,10 +16,10 @@ blue    = [ "4", "#268bd2"] # L*a*b 55 -10 -45
 cyan    = [ "6", "#2aa198"] # L*a*b 60 -35 -05
 green   = [ "2", "#719e07"] # L*a*b 60 -30  60 experimental
 
-bgred   = ["52", "#620000"] # L*a*b 10  65  45
-bgblue  = ["18", "#002c67"] # L*a*b 15 -10 -45
-bgblue1 = ["20", "#004e8d"] # L*a*b 30 -10 -45
-bggreen = ["22", "#1c4a00"] # L*a*b 27 -30  60
+bgred   = ["52", "#301010"] # L*a*b 10  65  45  DiffDelete
+bgblue  = ["18", "#180018"] # L*a*b 15 -10 -45  DiffChange
+bgblue1 = ["20", "#303000"] # L*a*b 30 -10 -45  DiffText
+bggreen = ["22", "#003000"] # L*a*b 27 -30  60  DiffAdd
 
 if background == "light"
   base03, base3 = base3, base03
@@ -31,6 +31,11 @@ if background == "light"
   bgblue  = ["159", "#b0ffff"] # L*a*b 97 -10 -45
   bgblue1 = ["117", "#92e2ff"] # L*a*b 87 -10 -45
   bggreen = ["191", "#caf76d"] # L*a*b 90 -30  60
+else
+  base03  = [ "8", "#001319"] # L*a*b 13 -12 -12
+  #base02  = [ "0", "#031b21"] # L*a*b 20 -12 -12
+  #base01  = ["10", "#2c373a"] # L*a*b 45 -07 -07
+  #base00  = ["11", "#323d41"] # L*a*b 50 -07 -07
 end
 
 def attr(attr)
